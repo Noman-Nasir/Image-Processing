@@ -30,16 +30,15 @@ while previousThreshold!=threshold :
     
 
 
-
-##g(x,y) = 0 if f(x,y) < T
-##g(x,y) = 1 if f(x,y) ≥ T
-
 bool_idx = (image < threshold)
 image[bool_idx] = 0
 bool_idx = (image >= threshold)
 image[bool_idx] = 255
 
-cv2.imwrite(imageName+'GT'+extension,image)
+# cv2.imwrite(imageName+'GT'+extension,image)
+
+cv2.imshow('a',image)
+cv2.waitKey()
 
 
 

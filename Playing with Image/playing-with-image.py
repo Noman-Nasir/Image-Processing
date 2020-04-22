@@ -20,8 +20,6 @@ def imageType(image):
 imageNmae = 'red'
 template = cv2.imread(imageNmae+'.jpg',1)
 
-
-
 print (imageType(template))
 imageSize(template)
 
